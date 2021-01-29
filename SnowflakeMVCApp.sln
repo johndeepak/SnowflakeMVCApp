@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowflakeMVCApp", "SnowflakeMVCApp\SnowflakeMVCApp.csproj", "{57867FD6-4E29-45D4-8DF1-CDD7CE28D03D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57867FD6-4E29-45D4-8DF1-CDD7CE28D03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57867FD6-4E29-45D4-8DF1-CDD7CE28D03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57867FD6-4E29-45D4-8DF1-CDD7CE28D03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57867FD6-4E29-45D4-8DF1-CDD7CE28D03D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED03FFE9-AFBB-419D-89C0-A436E24DE6DB}
+	EndGlobalSection
+EndGlobal

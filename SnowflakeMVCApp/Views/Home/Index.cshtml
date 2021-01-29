@@ -1,0 +1,84 @@
+﻿@model IEnumerable<SnowflakeMVCApp.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style type="text/css">
+    #grid {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 1200px;
+    }
+
+        #grid td, #grid th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #grid tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #grid tr:hover {
+            background-color: #ddd;
+        }
+
+        #grid th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    .buttons {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+</style>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddOREdit")
+</p>
+<table Id="grid">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Firstname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lastname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "AddOREdit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
